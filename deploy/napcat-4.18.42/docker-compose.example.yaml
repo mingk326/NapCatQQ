@@ -2,7 +2,7 @@ name: napcat
 
 services:
   napcat:
-    image: ghcr.io/mingk326/napcat-docker:4.18.42
+    image: ghcr.io/mingk326/napcatqq:4.18.42
     container_name: NapCat
     restart: always
     environment:
@@ -21,3 +21,4 @@ services:
 networks:
   napcat_network:
     driver: bridge
+
