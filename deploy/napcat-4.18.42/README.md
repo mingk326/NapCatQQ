@@ -6,13 +6,13 @@ Docker Hub 上的 `mlikiowa/napcat-docker` 已无法拉取（`pull access denied
 ## 镜像
 
 ```
-ghcr.io/mingk326/napcat-docker:4.18.42
+ghcr.io/mingk326/napcatqq:4.18.42
 ```
 
 拉取：
 
 ```bash
-docker pull ghcr.io/mingk326/napcat-docker:4.18.42
+docker pull ghcr.io/mingk326/napcatqq:4.18.42
 ```
 
 说明：
@@ -75,3 +75,4 @@ NapCat WebUI 的清理插件，用于清理缓存 / 临时文件。
 | NapCat.Core | 4.18.42 |
 | 基础镜像 | mlikiowa/napcat-docker:latest（2026-10-21 构建，镜像内 4.18.41） |
 | 打包时间 | 2026-11-12 |
+
