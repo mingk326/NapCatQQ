@@ -6,8 +6,9 @@ Docker Hub 上的 `mlikiowa/napcat-docker` 已无法拉取（`pull access denied
 ## 镜像
 
 ```
-ghcr.io/mingk326/napcatqq:4.18.42      # 最新（已含插件市场索引补丁）
-ghcr.io/mingk326/napcatqq:4.18.42-r2   # 同上，同一镜像的显式补丁标签
+ghcr.io/mingk326/napcatqq:4.18.42-r3   # 最新：已清理残留 + 含插件市场索引补丁
+ghcr.io/mingk326/napcatqq:4.18.42      # 同上，指向同一镜像
+ghcr.io/mingk326/napcatqq:4.18.42-r2   # 旧版（未清理运行残留，1.79GB）
 ```
 
 拉取：
@@ -22,6 +23,26 @@ docker pull ghcr.io/mingk326/napcatqq:4.18.42
   上层覆盖为手动升级后的 4.18.42 程序文件，因此版本为 **4.18.42**。
 - 运行数据（`/app/napcat/config`、`/app/.config/QQ`）不包含在镜像内，务必用卷挂载持久化。
 - 首次运行需扫码登录 QQ；WebUI 端口为容器内 `6099`。
+- **r3 起已压平并清理**：移除从运行中容器带入的 `temp/napcat-extract`(112M)、`napcat-latest.zip`(35M)、
+  `cache/`、`config/` 残留，镜像 1.59GB（r2 为 1.79GB）。
+
+## 运行要求（重要）
+
+`/dev/shm` 默认只有 64MB，会导致 QQ 的 Chromium 网络进程反复崩溃（日志出现
+`Network service crashed or was terminated`），表现为 **二维码刷新不出来 / 登录界面一直转圈**。
+compose 中必须加：
+
+```yaml
+    shm_size: 1gb
+```
+
+### 登录排障
+
+| 现象 | 原因 / 处理 |
+|---|---|
+| 提示「密码登录功能未初始化」 | QQ 客户端还没初始化完就点了。该文案来自 `NapCatHelper.onPasswordLoginRequested` 的占位实现，真实实现要等客户端启动后才注入；等 20~30 秒再试 |
+| 密码登录报 `140022010` / 异常设备 | 新设备密码登录必被风控，改用扫码 |
+| 二维码区域一直转圈 / 不出现 | ① `shm_size` 不足（见上）；② `ntqq` 目录登录态损坏，停容器、把 `ntqq` 改名备份、重建空目录后重启 |
 
 ### 已内置的补丁（r2 起）
 
@@ -90,7 +111,8 @@ NapCat WebUI 的清理插件，用于清理缓存 / 临时文件。
 | NapCat.Core | 4.18.42 |
 | 基础镜像 | mlikiowa/napcat-docker:latest（2026-10-21 构建，镜像内 4.18.41） |
 | 打包时间 | 2026-11-12 |
-| 索引补丁版本 | `4.18.42-r2`（`:4.18.42` 已指向同一镜像） |
-| digest | `sha256:782098651c5450a88a72c0f0e8ef2e7724cfa04c6319214d764a72bf85d70112` |
+| 索引补丁版本 | `4.18.42-r3`（`:4.18.42` 指向同一镜像） |
+| digest | `sha256:f93fc444dbe4dc77e47939517c556e7d2f5da6a4a3063240a4ae96b55db3aff0` |
+| 体积 | 1.59GB（压平后，无运行残留） |
 | 公开状态 | public，可匿名拉取（已验证） |
 
