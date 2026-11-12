@@ -1,0 +1,590 @@
+{
+  "version": "1.0.0",
+  "updateTime": "2026-11-06T14:03:03Z",
+  "statsUrl": "https://ghproxy.net/https://raw.githubusercontent.com/mingk326/NapCatQQ/main/deploy/napcat-plugin-index/plugin-release-data.json",
+  "plugins": [
+    {
+      "id": "napcat-plugin-builtin",
+      "name": "插件更新检测",
+      "version": "1.2.0",
+      "description": "一个多功能更新检测工具，支持定时检查已安装插件和订阅的Git仓库更新。",
+      "author": "MortalCat",
+      "homepage": "https://github.com/xiowo/napcat-plugin-update-checker",
+      "downloadUrl": "https://github.com/xiowo/napcat-plugin-update-checker/releases/download/v1.2.0/napcat-plugin-update-checker.zip",
+      "tags": [
+        "工具",
+        "管理"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-cleaner",
+      "name": "缓存清理",
+      "version": "1.2.0",
+      "description": "NapCat 缓存清理",
+      "author": "NapNeko",
+      "homepage": "https://napcat.napneko.icu",
+      "downloadUrl": "https://github.com/NapNeko/napcat-plugin-index/releases/download/v1.0.0/napcat-plugin-cleaner.zip",
+      "tags": [
+        "官方",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-debug",
+      "name": "插件调试服务",
+      "version": "1.0.8",
+      "description": "NapCat 插件调试服务 — 通过 WS 暴露 PluginManager API，配合 CLI 实现热重载",
+      "author": "NapNeko",
+      "homepage": "https://github.com/NapNeko/napcat-plugin-debug",
+      "downloadUrl": "https://github.com/NapNeko/napcat-plugin-debug/releases/download/v1.0.8/napcat-plugin-debug.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-group-manager",
+      "name": "NapCat 群管插件",
+      "version": "1.2.1",
+      "description": "轻量级群管插件，集成了入群欢迎、违禁词过滤及管理员命令。",
+      "author": "Chace",
+      "homepage": "https://github.com/chaceqc/napcat-plugin-group-manager",
+      "downloadUrl": "https://github.com/chaceqc/napcat-plugin-group-manager/releases/download/v1.2.1/napcat-plugin-group-manager.zip",
+      "tags": [
+        "群管",
+        "工具",
+        "管理"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-auto-tasks",
+      "name": "自动化任务插件",
+      "version": "1.2.0",
+      "description": "NapCat 自动化任务 (自动打卡/续火花/自定义任务/群公告)",
+      "author": "Chace",
+      "homepage": "https://github.com/ChaceQC/napcat-plugin-auto-tasks",
+      "downloadUrl": "https://github.com/ChaceQC/napcat-plugin-auto-tasks/releases/download/v1.2.0/napcat-plugin-auto-tasks.zip",
+      "tags": [
+        "工具",
+        "定时任务"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-tsai",
+      "name": "AI 绘画",
+      "version": "1.0.1",
+      "description": "AI绘画插件",
+      "author": "Tavre",
+      "homepage": "https://github.com/Tavre/napcat-plugin-tsai",
+      "downloadUrl": "https://github.com/Tavre/napcat-plugin-tsai/releases/download/Latest/napcat-plugin-tsai.zip",
+      "tags": [
+        "工具",
+        "AI"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-ssqq",
+      "name": "Stapxs QQ Lite",
+      "version": "3.3.3-2",
+      "description": "一个兼容 OneBot 协议的第三方 QQ 客户端！",
+      "author": "林小槐",
+      "homepage": "https://github.com/Stapxs/Stapxs-QQ-Lite-2.0",
+      "downloadUrl": "https://github.com/Stapxs/Stapxs-QQ-Lite-2.0/releases/download/v3.3.3/napcat-plugin-ssqq.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.13"
+    },
+    {
+      "id": "napcat-plugin-puppeteer",
+      "name": "Puppeteer 渲染服务",
+      "version": "1.5.0",
+      "description": "NapCat Puppeteer 渲染服务插件 - 提供 HTML/模板截图渲染 API，供其他插件调用",
+      "author": "AQiaoYo",
+      "homepage": "https://github.com/AQiaoYo/napcat-plugin-puppeteer",
+      "downloadUrl": "https://github.com/AQiaoYo/napcat-plugin-puppeteer/releases/download/v1.5.0/napcat-plugin-puppeteer.zip",
+      "tags": [
+        "工具",
+        "渲染"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-terraria-wiki",
+      "name": "泰拉瑞亚灾厄模组Wiki查询",
+      "version": "0.1.2",
+      "description": "从wiki截取页面",
+      "author": "nanting",
+      "homepage": "https://github.com/NanTingPer/napcat-terraria-wiki-plugin",
+      "downloadUrl": "https://github.com/NanTingPer/napcat-terraria-wiki-plugin/releases/download/v0.1.2/napcat-plugin-terraria-wiki.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-openclaw",
+      "name": "OpenClaw AI Channel",
+      "version": "1.4.0",
+      "description": "将 QQ 变为 OpenClaw AI 助手通道，支持私聊/群聊、斜杠命令、输入状态",
+      "author": "CharTyr",
+      "homepage": "https://github.com/CharTyr/napcat-plugin-openclaw",
+      "downloadUrl": "https://github.com/CharTyr/napcat-plugin-openclaw/releases/download/v1.4.0/napcat-plugin-openclaw.zip",
+      "tags": [
+        "AI",
+        "工具",
+        "自动化"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-auto-to-like",
+      "name": "自动回赞",
+      "version": "1.0.2",
+      "description": "这是一个自动回赞插件",
+      "author": "Chace",
+      "homepage": "https://github.com/ChaceQC/napcat-plugin-auto-to-like",
+      "downloadUrl": "https://github.com/ChaceQC/napcat-plugin-auto-to-like/releases/download/v1.0.2/napcat-plugin-auto-to-like.zip",
+      "tags": [
+        "娱乐"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-checkin",
+      "name": "签到插件",
+      "version": "1.2.1",
+      "description": "NapCat 精美签到插件 - 支持连续签到加成、积分统计",
+      "author": "MY-Final",
+      "homepage": "https://github.com/MY-Final/napcat-plugin-checkin",
+      "downloadUrl": "https://github.com/MY-Final/napcat-plugin-checkin/releases/download/v1.2.1/napcat-plugin-checkin.zip",
+      "tags": [
+        "工具",
+        "娱乐"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-aichat",
+      "name": "AI 聊天插件",
+      "version": "1.6.1",
+      "description": "NapCat 插件 - AI 聊天插件",
+      "author": "LinmingXHL",
+      "homepage": "https://github.com/Linming-XHL/napcat-plugin-aichat",
+      "downloadUrl": "https://github.com/Linming-XHL/napcat-plugin-aichat/releases/download/v1.6.1/napcat-plugin-aichat.zip",
+      "tags": [
+        "工具",
+        "AI"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-groupname",
+      "name": "群名称插件",
+      "version": "1.0.3",
+      "description": "NapCat 插件 - 群名称插件",
+      "author": "lingran7031",
+      "homepage": "https://github.com/lingran7031/napcat-plugin-groupname",
+      "downloadUrl": "https://github.com/lingran7031/napcat-plugin-groupname/releases/download/v1.0.3/napcat-plugin-groupname.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-novel-downloader",
+      "name": "小说下载器",
+      "version": "1.0.8",
+      "description": "支持七猫小说搜索和下载",
+      "author": "LANHU199",
+      "homepage": "https://github.com/wuxiang999/napcat-plugin-novel-downloader",
+      "downloadUrl": "https://github.com/wuxiang999/napcat-plugin-novel-downloader/releases/download/v1.0.8/napcat-plugin-novel-downloader.zip",
+      "tags": [
+        "工具",
+        "娱乐"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-douyin",
+      "name": "抖音视频解析",
+      "version": "1.0.3",
+      "description": "解析分享的抖音视频链接，获取视频信息和原视频并发送到群聊中。",
+      "author": "BlackCyan",
+      "homepage": "https://github.com/Black-Cyan/napcat-plugin-douyin",
+      "downloadUrl": "https://github.com/Black-Cyan/napcat-plugin-douyin/releases/download/v1.0.3/napcat-plugin-douyin.zip",
+      "tags": [
+        "工具",
+        "娱乐"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-gscore-adapter",
+      "name": "GScore 适配器",
+      "version": "1.3.6",
+      "description": "一个适用于NapCat的GScore适配器",
+      "author": "MortalCat",
+      "homepage": "https://github.com/xiowo/napcat-plugin-gscore-adapter",
+      "downloadUrl": "https://github.com/xiowo/napcat-plugin-gscore-adapter/releases/download/v1.3.6/napcat-plugin-gscore-adapter.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-manborvc",
+      "name": "曼波语音生成器",
+      "version": "1.0.4",
+      "description": "NapCat 插件 - 曼波语音生成器，通过在线API生成曼波语音，使用指令/曼波 {要说的内容}",
+      "author": "LinmingXHL",
+      "homepage": "https://github.com/Linming-XHL/napcat-plugin-manborvc",
+      "downloadUrl": "https://github.com/Linming-XHL/napcat-plugin-manborvc/releases/download/v1.0.4/napcat-plugin-manborvc.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-mqtt",
+      "name": "mqtt插件",
+      "version": "1.0.4",
+      "description": "NapCat连接MQTT服务器的插件，可以将QQ消息转发到MQTT服务器，或者从MQTT服务器接收消息并发送到QQ。",
+      "author": "Chuyu",
+      "homepage": "https://github.com/Chuyu2020/napcat-plugin-mqtt",
+      "downloadUrl": "https://github.com/Chuyu2020/napcat-plugin-mqtt/releases/download/v1.0.4/napcat-plugin-mqtt.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-rss",
+      "name": "RSS 订阅推送",
+      "version": "1.0.7",
+      "description": "NapCat RSS 订阅推送插件 - 定时检测 RSS 更新并推送到群",
+      "author": "Your Name",
+      "homepage": "https://github.com/MY-Final/napcat-plugin-rss",
+      "downloadUrl": "https://github.com/MY-Final/napcat-plugin-rss/releases/download/v1.0.7/napcat-plugin-rss.zip",
+      "tags": [
+        "工具",
+        "RSS"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-auto-lucky-bag",
+      "name": "自动福袋",
+      "version": "1.0.0",
+      "description": "自动抽取 QQ 福袋",
+      "author": "Nacho",
+      "homepage": "https://github.com/KyuharuTE/napcat-plugin-auto-lucky-bag",
+      "downloadUrl": "https://github.com/KyuharuTE/napcat-plugin-auto-lucky-bag/releases/download/v1.0.0/napcat-plugin-auto-lucky-bag.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-pixiv",
+      "name": "Pixiv 图片",
+      "version": "1.1.5",
+      "description": "NapCat Pixiv 插件 - 搜索与推荐 Pixiv 插画，支持合并转发",
+      "author": "ChaceQC",
+      "homepage": "https://github.com/ChaceQC/napcat-plugin-pixiv",
+      "downloadUrl": "https://github.com/ChaceQC/napcat-plugin-pixiv/releases/download/v1.1.5/napcat-plugin-pixiv.zip",
+      "tags": [
+        "图片",
+        "Pixiv"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-brushing",
+      "name": "官机互刷插件",
+      "version": "1.0.2",
+      "description": "官机互刷DAU插件，自动与在线官机互刷提升DAU",
+      "author": "蛙蛙",
+      "homepage": "https://github.com/wozhendefuleaaa/napcat-plugin-brushing",
+      "downloadUrl": "https://github.com/wozhendefuleaaa/napcat-plugin-brushing/releases/download/v1.0.2/napcat-plugin-brushing.zip",
+      "tags": [
+        "工具",
+        "自动化"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-update-checker",
+      "name": "插件更新检测",
+      "version": "1.1.6",
+      "description": "一个多功能更新检测工具，支持定时检查已安装插件和订阅的Git仓库更新。",
+      "author": "MortalCat",
+      "homepage": "https://github.com/xiowo/napcat-plugin-update-checker",
+      "downloadUrl": "https://github.com/xiowo/napcat-plugin-update-checker/releases/download/v1.1.6/napcat-plugin-update-checker.zip",
+      "tags": [
+        "工具",
+        "管理"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-spam-checker",
+      "name": "群聊刷屏检测",
+      "version": "1.0.1",
+      "description": "群聊刷屏检测插件 - 检测重复消息、消息频率、相似消息等刷屏行为",
+      "author": "蛙蛙",
+      "homepage": "https://github.com/wozhendefuleaaa/napcat-plugin-spam-checker",
+      "downloadUrl": "https://github.com/wozhendefuleaaa/napcat-plugin-spam-checker/releases/download/v1.0.1/napcat-plugin-spam-checker.zip",
+      "tags": [
+        "管理"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-group-invite-auto-approve",
+      "name": "自动同意加群",
+      "version": "1.0.0",
+      "description": "自动同意加群插件 - 根据群名称或群简介关键词自动同意加群邀请",
+      "author": "星陨",
+      "homepage": "https://github.com/XingYunStar/napcat-plugin-group-invite-auto-approve",
+      "downloadUrl": "https://github.com/XingYunStar/napcat-plugin-group-invite-auto-approve/releases/download/v1.0.0/napcat-plugin-group-invite-auto-approve.zip",
+      "tags": [
+        "工具",
+        "自动化"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-mute-recover",
+      "name": "禁言恢复",
+      "version": "1.0.1",
+      "description": "非本人解除禁言时自动恢复剩余时间禁言",
+      "author": "星陨",
+      "homepage": "https://github.com/XingYunStar/napcat-plugin-mute-recover",
+      "downloadUrl": "https://github.com/XingYunStar/napcat-plugin-mute-recover/releases/download/v1.0.1/napcat-plugin-mute-recover.zip",
+      "tags": [
+        "管理",
+        "自动化",
+        "禁言"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-ai-chat-template",
+      "name": "AI 群聊模板",
+      "version": "0.1.5",
+      "description": "NapCat 通用 AI 群聊 / 私聊模板插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-ai-chat-template",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-ai-chat-template/releases/download/v0.1.5/napcat-plugin-ai-chat-template.zip",
+      "tags": [
+        "工具",
+        "AI"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-bilibili-live-push",
+      "name": "bilibili-live-push",
+      "version": "0.1.2",
+      "description": "NapCat Bilibili 开播通知推送插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-bilibili-live-push",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-bilibili-live-push/releases/download/v0.1.2/napcat-plugin-bilibili-live-push.zip",
+      "tags": [
+        "通知",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-ff14-market-house",
+      "name": "ff14-market-house",
+      "version": "0.1.3",
+      "description": "NapCat FF14 查价与查房插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-ff14-market-house",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-ff14-market-house/releases/download/v0.1.3/napcat-plugin-ff14-market-house.zip",
+      "tags": [
+        "游戏",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-music-share",
+      "name": "music-share",
+      "version": "0.1.3",
+      "description": "NapCat 网易云点歌与歌词查询插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-music-share",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-music-share/releases/download/v0.1.3/napcat-plugin-music-share.zip",
+      "tags": [
+        "娱乐",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-fun-pack",
+      "name": "fun-pack",
+      "version": "0.1.2",
+      "description": "NapCat 娱乐功能合集插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-fun-pack",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-fun-pack/releases/download/v0.1.2/napcat-plugin-fun-pack.zip",
+      "tags": [
+        "娱乐",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-twitter-push",
+      "name": "twitter-push",
+      "version": "0.2.1",
+      "description": "NapCat X/Twitter 查询与推送插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-twitter-push",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-twitter-push/releases/download/v0.2.1/napcat-plugin-twitter-push.zip",
+      "tags": [
+        "通知",
+        "社交"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-weibo-push",
+      "name": "weibo-push",
+      "version": "0.2.2",
+      "description": "NapCat 微博查询与推送插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-weibo-push",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-weibo-push/releases/download/v0.2.2/napcat-plugin-weibo-push.zip",
+      "tags": [
+        "通知",
+        "社交"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-ff14-logs",
+      "name": "ff14-logs",
+      "version": "0.1.1",
+      "description": "NapCat FF14 Logs 百分位查询插件",
+      "author": "sanxi",
+      "homepage": "https://github.com/sanxi33/napcat-plugin-ff14-logs",
+      "downloadUrl": "https://github.com/sanxi33/napcat-plugin-ff14-logs/releases/download/v0.1.1/napcat-plugin-ff14-logs.zip",
+      "tags": [
+        "游戏",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-teamspeaklink",
+      "name": "TeamSpeak3 Link",
+      "version": "1.0.8",
+      "description": "连接 QQ 机器人与 TeamSpeak3 语音服务器，支持在线人数查询和用户通知",
+      "author": "jacksixth",
+      "homepage": "https://github.com/jacksixth/napcat-plugin-teamspeakLink",
+      "downloadUrl": "https://github.com/jacksixth/napcat-plugin-teamspeakLink/releases/download/v1.0.8/napcat-plugin-teamspeakLink.zip",
+      "tags": [
+        "工具",
+        "语音"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-mcrcon",
+      "name": "Minecraft RCON 管理",
+      "version": "1.0.1",
+      "description": "通过 QQ 机器人管理 Minecraft 服务器，支持状态查询、RCON 命令执行",
+      "author": "jacksixth",
+      "homepage": "https://github.com/jacksixth/napcat-plugin-mcRcon",
+      "downloadUrl": "https://github.com/jacksixth/napcat-plugin-mcRcon/releases/download/v1.0.1/napcat-plugin-mcRcon.zip",
+      "tags": [
+        "游戏",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-ai-chat-pro",
+      "name": "AI聊天",
+      "version": "1.0.0",
+      "description": "QQ机器人AI聊天插件，支持文本对话与视觉识别。唤醒词/@触发、多轮对话记忆（可配置轮数）、黑白名单访问控制、分段回复、引用回复。兼容OpenAI格式API，支持DeepSeek/SiliconFlow等模型，自动获取模型列表，视觉模型优先处理图片消息。",
+      "author": "星陨",
+      "homepage": "https://github.com/XingYunStar/napcat-plugin-ai-chat-pro",
+      "downloadUrl": "https://github.com/XingYunStar/napcat-plugin-ai-chat-pro/releases/download/v1.0.0/napcat-plugin-ai-chat-pro.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-mute-list",
+      "name": "禁言列表",
+      "version": "1.0.3",
+      "description": "NapCat 禁言列表插件，自动禁言指定用户，支持群白名单/黑名单过滤，可自定义禁言时长（默认120秒）",
+      "author": "星陨",
+      "homepage": "https://github.com/XingYunStar/napcat-plugin-mute-list",
+      "downloadUrl": "https://github.com/XingYunStar/napcat-plugin-mute-list/releases/download/v1.0.3/napcat-plugin-mute-list.zip",
+      "tags": [
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-yunfeng",
+      "name": "云枫",
+      "version": "1.0.6",
+      "description": "自定义API，webhook消息的群推送等",
+      "author": "云枫",
+      "homepage": "https://github.com/yunfengnobug/napcat-plugin-yunfeng",
+      "downloadUrl": "https://github.com/yunfengnobug/napcat-plugin-yunfeng/releases/download/v1.0.6/napcat-plugin-yunfeng.zip",
+      "tags": [
+        "工具",
+        "自动化",
+        "其他"
+      ],
+      "minVersion": "4.14.0"
+    },
+    {
+      "id": "napcat-plugin-importer",
+      "name": "插件导入器",
+      "version": "1.0.4",
+      "description": "在 WebUI 里恢复「导入插件」页面与接口：上传本地 zip 即可安装/启用插件（任何带插件系统的 NapCat 版本可用）",
+      "author": "星陨",
+      "homepage": "https://github.com/XingYunStar/napcat-plugin-importer",
+      "downloadUrl": "https://github.com/XingYunStar/napcat-plugin-importer/releases/download/v1.0.4/napcat-plugin-importer.zip",
+      "tags": [
+        "工具",
+        "WebUI",
+        "插件管理"
+      ],
+      "minVersion": "4.12.0"
+    },
+    {
+      "id": "napcat-plugin-banned-words",
+      "name": "违禁词过滤",
+      "version": "1.0.0",
+      "description": "违禁词过滤插件：群白名单生效，命中违禁词可禁言 / 撤回 / 禁言+撤回 / 踢人 / 黑名单踢人；每个违禁词独立配置（匹配方式、处置、时长、生效群）；全程静默不发送任何消息；自带 WebUI 管理面板。",
+      "author": "星陨",
+      "homepage": "https://github.com/XingYunStar/napcat-plugin-banned-words",
+      "downloadUrl": "https://github.com/XingYunStar/napcat-plugin-banned-words/releases/download/v1.0.0/napcat-plugin-banned-words.zip",
+      "tags": [
+        "群管",
+        "管理",
+        "工具"
+      ],
+      "minVersion": "4.14.0"
+    }
+  ]
+}
+
