@@ -6,7 +6,8 @@ Docker Hub 上的 `mlikiowa/napcat-docker` 已无法拉取（`pull access denied
 ## 镜像
 
 ```
-ghcr.io/mingk326/napcatqq:4.18.42
+ghcr.io/mingk326/napcatqq:4.18.42      # 最新（已含插件市场索引补丁）
+ghcr.io/mingk326/napcatqq:4.18.42-r2   # 同上，同一镜像的显式补丁标签
 ```
 
 拉取：
@@ -21,6 +22,20 @@ docker pull ghcr.io/mingk326/napcatqq:4.18.42
   上层覆盖为手动升级后的 4.18.42 程序文件，因此版本为 **4.18.42**。
 - 运行数据（`/app/napcat/config`、`/app/.config/QQ`）不包含在镜像内，务必用卷挂载持久化。
 - 首次运行需扫码登录 QQ；WebUI 端口为容器内 `6099`。
+
+### 已内置的补丁（r2 起）
+
+原作者删除 `NapNeko/napcat-plugin-index` 后，NapCat 内置插件市场索引地址全部 404。
+本镜像在构建时把 `/app/napcat/napcat.mjs` 中的索引地址替换为本仓库镜像：
+
+```
+https://raw.githubusercontent.com/NapNeko/napcat-plugin-index/main/plugins.v4.json
+→ https://ghproxy.net/https://raw.githubusercontent.com/mingk326/NapCatQQ/main/deploy/napcat-plugin-index/plugins.v4.json
+```
+
+- 原文件备份为 `/app/napcat/napcat.mjs.orig`
+- 索引备份说明见 [../napcat-plugin-index/README.md](../napcat-plugin-index/README.md)
+- 使用该镜像无需再在容器内打补丁；若换回官方/其它镜像，需重新执行补丁步骤
 
 ## 使用示例
 
@@ -75,4 +90,7 @@ NapCat WebUI 的清理插件，用于清理缓存 / 临时文件。
 | NapCat.Core | 4.18.42 |
 | 基础镜像 | mlikiowa/napcat-docker:latest（2026-10-21 构建，镜像内 4.18.41） |
 | 打包时间 | 2026-11-12 |
+| 索引补丁版本 | `4.18.42-r2`（`:4.18.42` 已指向同一镜像） |
+| digest | `sha256:782098651c5450a88a72c0f0e8ef2e7724cfa04c6319214d764a72bf85d70112` |
+| 公开状态 | public，可匿名拉取（已验证） |
 
