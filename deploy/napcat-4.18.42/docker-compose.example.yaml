@@ -2,9 +2,11 @@ name: napcat
 
 services:
   napcat:
-    image: ghcr.io/mingk326/napcatqq:4.18.42
+    image: ghcr.io/mingk326/napcatqq:4.18.42-r3
     container_name: NapCat
     restart: always
+    # 必须：默认 64MB 会导致 QQ 的 Chromium 网络进程反复崩溃（二维码刷不出来）
+    shm_size: 1gb
     environment:
       - NAPCAT_UID=1000
       - NAPCAT_GID=1001
